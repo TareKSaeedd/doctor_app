@@ -5,6 +5,9 @@ import 'package:flutter/material.dart';
 
 class AppRouter {
   Route onGenerateRoute(RouteSettings settings) {
+    //this arguments will be used to pass data between screens
+    final arguments = settings.arguments;
+
     switch (settings.name) {
       case Routes.onBoardingScreen:
         return MaterialPageRoute(builder: (_) => const OnboardingScreen());
